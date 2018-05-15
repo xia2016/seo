@@ -1,0 +1,56 @@
+﻿
+.table tr.active,
+.table td.active,
+.table th.active {
+  background-color: transparent !important;
+  border: dodgerblue solid 1px;
+}
+#keyword_row_data .active{
+  position: relative;
+}
+#keyword_row_data .active:before {
+  right: 5px;
+  bottom: 1px;
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
+  font-weight: 300;
+  color: #fff;
+  z-index: 2;
+}
+#paltform_pc,#paltform_mobile,#paltform_360,#paltform_sougou{
+  border: 1px solid #dedede;
+  position: relative;
+  cursor: pointer;
+}
+#paltform_pc:before,#paltform_mobile:before,#paltform_360:before,#paltform_sougou:before{
+  right: 5px;
+  bottom: 1px;
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  content: "\e013";
+  color: #dedede;
+  font-weight: 300;
+  font-size: 12px;
+}
+#paltform_pc:after,#paltform_mobile:after,#paltform_360:after,#paltform_sougou:after{
+  content: '';
+  border: 16px solid transparent;
+  border-right: 16px solid rgba(222, 222, 222, 0.45);
+  border-bottom: 16px solid rgba(222, 222, 222, 0.45);
+  width: 0;
+  height: 0;
+  position: absolute;
+  right:0;
+  bottom: 0;
+  z-index: 1;
+}
+/*6cc788*/
+
+#keyword_row_data .active{
+  border-color: #126fb5;
+}
+#keyword_row_data .active:after{
+  border-right: 16px solid #126fb5;
+  border-bottom: 16px solid #126fb5;
+}

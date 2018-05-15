@@ -1,0 +1,405 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta  http-equiv="expires" content="2018-06-10 13:55:55">
+
+    <title>客户后台</title>
+    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="_token" content="Kxk3PbYlgSoX3pXreIFcxiCrp7mK2pRIwiAwT09w"/>
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    
+    
+    
+    
+    <link rel="apple-touch-icon" href="/admin_sales/assets/images/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="/common/images/admin_logo.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../static/css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/glyphicons.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/material-design-icons.css" type="text/css" />
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css" />
+    <!-- build:css /admin_sales/assets/styles/app.min.css -->
+    <link rel="stylesheet" href="../static/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/app.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="../static/css/font_1.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/style_1.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/loading.css" type="text/css" />
+    
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/bootstrap.js" ></script>
+    <script src="../static/js/ylchinaarea.js" ></script>
+    <script src="../static/js/location.js" ></script>
+    <script src="../static/js/hsselect.js" ></script>
+    <script src="../static/js/echarts.min.js"></script>
+</head>
+<body class="pace-done" ui-class="">
+    <div class="app" id="app">
+    <div id="aside" class="app-aside modal nav-dropdown">
+    
+    <div class="left navside dark dk" data-layout="column">
+        <div class="navbar no-radius">
+            <a class="navbar-brand">
+                <img src="../static/picture/logo.png" alt="." class="hide">
+                <span class="hidden-folded inline">管理后台</span>
+            </a>
+        </div>
+        <div class="hide-scroll" data-flex>
+            <nav class="scroll nav-light">
+                <ul class="nav">
+                    <li class="nav-header hidden-folded">
+                        <small class="text-muted">栏目菜单</small>
+                    </li>
+
+                    <li>
+                        <a href="./customer.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-home"></i>
+                            </span>
+                            <span class="nav-text">首页</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./siteManage.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-cogs"></i>
+                                </span>
+                            <span class="nav-text">站点管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./siteList.html">
+                             <span class="nav-icon">
+                                  <i class="material-icons">
+                                      </i>
+                                </span>
+                            <span class="nav-text">购买词包</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./keywords/add.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-search"></i>
+                            </span>
+                            <span class="nav-text">选词购买</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./carts.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-shopping-cart"></i>
+                            </span>
+                            <span class="nav-text">购物车</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./monitor.html" >
+                                <span class="nav-icon">
+                                  <i class="fa fa-line-chart"></i>
+                                </span>
+                            <span class="nav-text">效果监控</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./vallet.html" >
+                            <span class="nav-icon">
+                                  <i class="fa fa-money"></i>
+                            </span>
+                            <span class="nav-text">财务管理</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./user/changepwd.html" >
+                            <span class="nav-icon">
+                                  <i class="fa fa-lock"></i>
+                            </span>
+                            <span class="nav-text">修改密码</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+
+
+        <div class="b-t">
+            <div class="nav-fold">
+                <span class="pull-left">
+        	      <img src="../static/picture/a0.jpg" alt="..." class="w-40 img-circle">
+        	    </span>
+                <span class="clear hidden-folded p-x">
+        	      <span class="block _500">18178610583</span>
+        	      <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>online</small>
+        	    </span>
+            </div>
+        </div>
+    </div>
+</div>    <!-- content -->
+    <div id="content" class="app-content box-shadow-z0" role="main">
+        <div class="app-header white box-shadow">
+    <div class="navbar navbar-toggleable-sm flex-row align-items-center" style="padding-top: 0;padding-bottom: 0; height: 3.5rem; margin-bottom: 0;">
+        <!-- Open side - Naviation on mobile -->
+        <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+            <i class="material-icons">&#xe5d2;</i>
+        </a>
+        <!-- / -->
+        <div class="collapse navbar-collapse" id="collapse" style="padding: 5px 0 5px 0">
+            <img src="../static/picture/admin_logo_100.png">
+            <div style="vertical-align:bottom;color: #126fb5; margin-left: 14px;">
+                <p style="margin-bottom: 0!important; margin-top: 6px; font-size: 13px;">放心投，为省钱而生！</p>
+                <p style="margin-bottom: 0!important; font-size: 13px;">www.fxt.cn</p>
+            </div>
+        </div>
+
+
+        <!-- navbar right -->
+        <ul class="nav navbar-nav ml-auto flex-row" style="height: 100%;">
+            <li id="mobileHead" class="nav-item dropdown pos-stc-xs" style="margin-right: 0.6rem;">
+                <a class="nav-link" href="/message/list">
+                    <i class="material-icons"></i>
+                    <span class="label label-sm up warn">14</span>
+                </a>
+
+            </li>
+
+            <li style=" width: 90px;  text-align: center;  line-height: 60px; margin-right: 10px; background: #126fb5;">
+                <a href="http://wpa.qq.com/msgrd?v=3&uin=2986362851&site=qq&menu=yes" class="hover-bgcolor" style="color: #fff; font-size: 0.95rem;">在线客服</a>
+            </li>
+            <li class="nav-item dropdown" style="width: 3rem;top:1rem">
+                <span class="avatar w-32" id="mobileAvatar">
+                    <img src="../static/picture/a0.jpg" alt="...">
+                    <i class="on b-white bottom"></i>
+                </span>
+            </li>
+        </ul>
+        <a class="hover-bgcolor" style="color: #126fb5;  font-size: 1.25rem; white-space: nowrap;">18178610583</a>
+        <span style="margin: 0 10px;  height: 16px; display: inline-block;  width: 2px; background: #126fb5;"></span>
+        <a class="hover-bgcolor" href="../login.htmlt" style="width: 6rem;font-size: 1rem; margin-left: 6px; color: #126fb5">退出账户</a>
+    </div>
+</div>
+
+        <div ui-view="" class="app-body" id="view">
+            <div class="padding">
+                
+    <div class="box">
+        <div class="box-header dker_line">
+            <h2>财务管理</h2>
+            <small>financial management</small>
+        </div>
+        <div class="dker p-x" >
+            <div class="row">
+                <div class="col-sm-6 push-sm-6">
+                    <div class="p-y text-center text-sm-right">
+                        <a href="" class="inline p-x text-center">
+                            <span class="h4 block m-0">3864</span>
+                            <small class="text-xs text-muted">账户余额</small>
+                        </a>
+                        <a href="" class="inline p-x b-l b-r text-center">
+                            <span class="h4 block m-0">3636</span>
+                            <small class="text-xs text-muted">已消费金额</small>
+                        </a>
+                        <a href="" class="inline p-x text-center">
+                            <span class="h4 block m-0">12</span>
+                            <small class="text-xs text-muted">关键词数</small>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="box-body">
+            <div class="table-responsive" >
+                <table class="table table-striped b-t">
+                    <thead>
+                    <tr>
+                        <th>日期</th>
+                        <th>达标关键词</th>
+                        <th>金额</th>
+                        <th>备注</th>
+                        <th>操作</th>
+                    </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                    
+                        <tr>
+
+                                                            <td>2018-03-19</td>
+                                <td>0</td>
+                                <td>-3636元 </td>
+                                <td>退款</td>
+                                <td></td>
+                            
+
+                        </tr>
+
+                    
+                        <tr>
+
+                                                            <td>2018-03-02</td>
+                                <td>0</td>
+                                <td>2500元 </td>
+                                <td>18178610583:客户充值</td>
+                                <td></td>
+                            
+
+                        </tr>
+
+                    
+                        <tr>
+
+                                                            <td>2018-03-02</td>
+                                <td>0</td>
+                                <td>5000元 </td>
+                                <td>18178610583:客户充值</td>
+                                <td></td>
+                            
+
+                        </tr>
+
+                    
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+    </div>
+
+            </div>
+        </div>
+        <script src="../static/js/jquery.js"></script>
+<script src="../static/js/jquery.form.js"></script>
+<script src="../static/js/tether.min.js"></script>
+<script src="../static/js/bootstrap.js"></script>
+<script src="../static/js/underscore-min.js"></script>
+<script src="../static/js/jquery.storageapi.min.js"></script>
+<script src="../static/js/pace.min.js"></script>
+<script src="../static/js/config.lazyload.js"></script>
+<script src="../static/js/palette.js"></script>
+<script src="../static/js/ui-load.js"></script>
+<script src="../static/js/ui-jp.js"></script>
+<script src="../static/js/ui-include.js"></script>
+<script src="../static/js/ui-device.js"></script>
+<script src="../static/js/ui-form.js"></script>
+<script src="../static/js/ui-nav.js"></script>
+<script src="../static/js/ui-screenfull.js"></script>
+<script src="../static/js/ui-scroll-to.js"></script>
+<script src="../static/js/ui-toggle-class.js"></script>
+<script src="../static/js/screenfull.min.js"></script>
+<script src="../static/js/app.js"></script>
+<script src="../static/js/jquery.pjax.js"></script>
+<script src="../static/js/ajax.js"></script>
+
+
+<div class="app-footer">
+    <div class="p-2 text-xs">
+        <div class="pull-right text-muted py-1">
+            &copy; Copyright <strong>苏州放心投</strong> <span class="hidden-xs-down">- Built with GM v3.0.0</span>
+            <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <!-- / -->
+    <div id="public-alert" class="modal fade" data-backdrop="true" data-content='显示的内容' style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="padding: 10px 15px;">
+                    <h5 class="modal-title">温馨提示</h5>
+                </div>
+                <div class="modal-body text-center p-lg">
+                    温馨提示温馨提示温馨提示
+                </div>
+                <div class="modal-footer" style="padding: 10px 15px;">
+                    <button type="button" class="btn dark-white p-x-md no" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn primary p-x-md ok" data-dismiss="modal">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="prop_wrap">
+            <div class="prop_wrap_con">
+                <span class="close">X</span>
+                <div class="img_wrap">
+                    <img src="" alt="" >
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="ajaxloader3">
+    <div class="outer"></div>
+    <div class="inner"></div>
+</div>
+    <script>
+    
+
+        function publicAlert(con, type, fn) {
+            $('#public-alert .modal-body').html(con);
+            $('#public-alert').modal('toggle');
+            if(!type) $('.modal-footer .no').hide();
+            $('.modal-footer .ok').on('click',function(){
+                fn ? fn() : '';
+                fn = false;
+            });
+            $('.modal-footer .no').on('click',function(){
+                fn = false;
+            });
+        };
+
+        $(document).on('click','.view-img',function (e) {
+            var src = '/'+$(this).data('src');
+            var pic = $('.prop_wrap_con .img_wrap img');
+            pic.attr('src',src);
+            var imgs = new Image();
+            imgs.src =  src;
+            imgs.onload = function(){
+                $('.loading').hide();
+                $('.prop_wrap').css('display','block');
+                var l = pic.innerWidth()/2,
+                    t = pic.innerHeight()/2;
+                $('.prop_wrap_con').css({margin: '-320px 0 0 -'+l+'px'});
+            };
+        });
+        $('.prop_wrap .img_wrap').on('click',function (e) {
+            e.stopPropagation();
+        })
+        $(document).on('click',function(e){
+            e.stopPropagation();
+            $('.prop_wrap').css('display','none');
+        });
+        //关闭截图
+        $('.prop_wrap .close').on('click',function () {
+            $(this).parents('.prop_wrap').css('display','none');
+        });
+    </script>
+
+        <script type="text/javascript">
+        function refund() {
+            var rst = confirm('是否确认申请退款？');
+            if(rst){
+                window.location.href = '/customer/vallet/refund';
+            }
+        }
+    </script>
+</body>
+</html>
