@@ -1,0 +1,453 @@
+﻿<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.ywhl.cn/message/list -->
+<html lang="en" class="hb-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="expires" content="2018-06-21 11:47:49">
+
+    <title>客户后台</title>
+    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="_token" content="uRaVCbd9Rkv6VE5lVShQYZvs99j6jEQDV1hxQRQX">
+    <!-- for ios 7 style, multi-resolution icon of 152x152 -->
+    
+    
+    
+    
+     <link rel="apple-touch-icon" href="/admin_sales/assets/images/logo.png">
+    <link rel="shortcut icon" sizes="196x196" href="/common/images/admin_logo.png">
+
+    <!-- style -->
+    <link rel="stylesheet" href="../static/css/animate.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/glyphicons.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/material-design-icons.css" type="text/css" />
+
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css" type="text/css" />
+    <!-- build:css /admin_sales/assets/styles/app.min.css -->
+    <link rel="stylesheet" href="../static/css/common.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/app.css" type="text/css" />
+    <!-- endbuild -->
+    <link rel="stylesheet" href="../static/css/font_1.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/style_1.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/loading.css" type="text/css" />
+    <script src="./list_files/jquery.js"></script>
+    <script src="./list_files/bootstrap.js"></script>
+    <script src="./list_files/YLChinaArea.js"></script>
+    <script src="./list_files/location.js"></script>
+    <script src="./list_files/HSselect.js"></script>
+    <script src="./list_files/echarts.min.js"></script>
+</head>
+<body class="pace-done" ui-class="">
+    <div class="app" id="app">
+    <div id="aside" class="app-aside modal nav-dropdown">
+    
+    <div class="left navside dark dk" data-layout="column">
+        <div style="background: rgb(21,166,137);
+  min-height: 3.5rem;height: 3.5rem;">
+            <a>
+                <img style="width: 100%;height: 100%" src="../static/picture/logo.png" alt=".">
+                <!--<span class="hidden-folded inline">让互联网SEO更容易</span>-->
+            </a>
+        </div>
+        <div class="hide-scroll" data-flex>
+            <nav class="scroll nav-light">
+                <ul class="nav">
+                    <div class="b-t">
+                        <div class="nav-fold">
+                            <span class="pull-left">
+                              <img src="../static/picture/a0.jpg" alt="..." class="w-40 img-circle">
+                            </span>
+                            <span class="clear hidden-folded p-x">
+                              <span class="block _500">您的专属客服：吴俊华</span>
+                              <small class="text-muted"><i class="fa fa-circle text-success m-r-sm"></i>在线</small>
+                              <small class="text-muted"><a style="text-decoration: underline;color: yellow;padding-left: 15px" href="">我要咨询</a></small>
+                            </span>
+                        </div>
+                    </div>
+                    <li class="nav-header hidden-folded">
+                        <small class="text-muted">管理控制台</small>
+                    </li>
+
+                    <li>
+                        <a href="./customer.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-home"></i>
+                            </span>
+                            <span class="nav-text">首页</span>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="./siteManage.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-cogs"></i>
+                                </span>
+                            <span class="nav-text">站点管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./keywords/add.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-search"></i>
+                            </span>
+                            <span class="nav-text">选词购买</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./carts.html">
+                             <span class="nav-icon">
+                                  <i class="fa fa-shopping-cart"></i>
+                            </span>
+                            <span class="nav-text">购词清单</span>
+                        </a>
+                    </li>
+
+
+                    <li>
+                        <a href="./monitor.html" >
+                                <span class="nav-icon">
+                                  <i class="fa fa-line-chart"></i>
+                                </span>
+                            <span class="nav-text">SEO排名监控</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./seoTips.html">
+                             <span class="nav-icon">
+                                  <i class="material-icons">
+                                      </i>
+                                </span>
+                            <span class="nav-text">优化提示</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./vallet.html" >
+                            <span class="nav-icon">
+                                  <i class="fa fa-money"></i>
+                            </span>
+                            <span class="nav-text">财务管理</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./agents.html">
+                            <span class="nav-icon">
+                                  <i class="fa fa-money"></i>
+                            </span>
+                            <span class="nav-text">代理推广</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="./user/changepwd.html" >
+                            <span class="nav-icon">
+                                  <i class="fa fa-lock"></i>
+                            </span>
+                            <span class="nav-text">密码修改</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+        </div>
+    </div>
+</div>    <!-- content -->
+    <div id="content" class="app-content box-shadow-z0" role="main">
+        <div class="app-header white box-shadow">
+    <div class="navbar navbar-toggleable-sm flex-row align-items-center" style="padding-top: 0;padding-bottom: 0; height: 3.5rem; margin-bottom: 0;">
+        <!-- Open side - Naviation on mobile -->
+        <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
+            <i class="material-icons"></i>
+        </a>
+    </div>
+</div>
+
+        <div ui-view="" class="app-body" id="view">
+            <div class="padding">
+                    <div class="box">
+        <div class="box-header dker_line">
+            <h3 class="box-title">我的消息列表</h3>
+            <small>message list</small>
+        </div>
+        <div class="box-body">
+            <form action="http://www.ywhl.cn/channel/messageList" method="get">
+                <div class="btn-group">
+                    <a href="http://www.ywhl.cn/message/list?status=-1" class="btn btn-outline info">全部</a>
+                    <a href="http://www.ywhl.cn/message/list?status=0" class="btn btn-outline b-info">未读</a>
+                    <a href="http://www.ywhl.cn/message/list?status=1" class="btn btn-outline b-info">已读</a>
+                    <a href="http://www.ywhl.cn/message/list?status=2" class="btn btn-outline b-info">已删除</a>
+                </div>
+
+                <a class="btn btn-md btn-outline b-info pull-right" href="http://www.ywhl.cn/message/readAll">全部标为已读</a>
+            </form>
+        </div>
+        <div style="padding: 10px">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th>序号</th>
+                    <th>标题</th>
+                    <th>内容</th>
+                    <th>类型</th>
+                    <th>状态</th>
+                    <th>时间</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 1 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">已读</td>
+                        <td style="vertical-align: middle;">2018-03-27 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                                                        <a href="http://www.ywhl.cn/message/del/4811" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 2 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-26 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/4681" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/4681" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 3 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-25 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/4585" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/4585" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 4 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-24 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/4480" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/4480" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 5 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-23 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/4373" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/4373" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 6 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-22 09:00:01</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/4241" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/4241" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 7 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-21 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/4107" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/4107" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 8 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-20 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/3994" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/3994" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 9 </td>
+                        <td style="vertical-align: middle"> 退款成功 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的退款已审核通过，退款金额已经退还到“南宁很久以前网络科技有限公司”账户！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-19 15:03:22</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/3947" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/3947" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                    <tr class="footable-even">
+                        <td style="vertical-align: middle"> 10 </td>
+                        <td style="vertical-align: middle"> 账户续费通知 </td>
+                        <td style="vertical-align: middle"> 亲爱的“18178610583”：您的“18178610583”账户余额不足，请尽快充值，账户金额消费结束关键词效果将停止优化！ </td>
+                        <td style="vertical-align: middle"> 系统通知 </td>
+                        <td style="vertical-align: middle; color: blue;">未读</td>
+                        <td style="vertical-align: middle;">2018-03-17 09:00:02</td>
+                        <td style="vertical-align: middle">
+                                                            <a href="http://www.ywhl.cn/message/read/3705" class="btn btn-sm btn-primary">标记已读</a>
+                                                                                        <a href="http://www.ywhl.cn/message/del/3705" class="btn btn-sm btn-danger">删除</a>
+                                                    </td>
+                    </tr>
+                                </tbody>
+            </table>
+
+        </div>
+
+        <div class="dker p-a text-right">
+            <ul class="pagination">
+        
+                    <li class="disabled"><span>«</span></li>
+        
+        
+                    
+            
+            
+                                                                        <li class="active"><span>1</span></li>
+                                                                                <li><a href="http://www.ywhl.cn/message/list?status=-1&amp;page=2">2</a></li>
+                                                                                <li><a href="http://www.ywhl.cn/message/list?status=-1&amp;page=3">3</a></li>
+                                                        
+        
+                    <li><a href="http://www.ywhl.cn/message/list?status=-1&amp;page=2" rel="next">»</a></li>
+            </ul>
+
+        </div>
+    </div>
+
+            </div>
+        </div>
+        <script src="./list_files/jquery.js"></script>
+<script src="./list_files/jquery.form.js"></script>
+<script src="./list_files/tether.min.js"></script>
+<script src="./list_files/bootstrap.js(1)"></script>
+<script src="./list_files/underscore-min.js"></script>
+<script src="./list_files/jquery.storageapi.min.js"></script>
+<script src="./list_files/pace.min.js"></script>
+<script src="./list_files/config.lazyload.js"></script>
+<script src="./list_files/palette.js"></script>
+<script src="./list_files/ui-load.js"></script>
+<script src="./list_files/ui-jp.js"></script>
+<script src="./list_files/ui-include.js"></script>
+<script src="./list_files/ui-device.js"></script>
+<script src="./list_files/ui-form.js"></script>
+<script src="./list_files/ui-nav.js"></script>
+<script src="./list_files/ui-screenfull.js"></script>
+<script src="./list_files/ui-scroll-to.js"></script>
+<script src="./list_files/ui-toggle-class.js"></script>
+<script src="./list_files/screenfull.min.js"></script>
+<script src="./list_files/app.js"></script>
+<script src="./list_files/jquery.pjax.js"></script>
+<script src="./list_files/ajax.js"></script>
+
+
+<div class="app-footer">
+    <div class="p-2 text-xs">
+        <div class="pull-right text-muted py-1">
+            © Copyright <strong>苏州放心投</strong> <span class="hidden-xs-down">- Built with GM v3.0.0</span>
+            <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
+        </div>
+    </div>
+</div>
+
+
+    </div>
+    <!-- / -->
+    <div id="public-alert" class="modal fade" data-backdrop="true" data-content="显示的内容" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header" style="padding: 10px 15px;">
+                    <h5 class="modal-title">温馨提示</h5>
+                </div>
+                <div class="modal-body text-center p-lg">
+                    温馨提示温馨提示温馨提示
+                </div>
+                <div class="modal-footer" style="padding: 10px 15px;">
+                    <button type="button" class="btn dark-white p-x-md no" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn primary p-x-md ok" data-dismiss="modal">确认</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="prop_wrap">
+            <div class="prop_wrap_con">
+                <span class="close">X</span>
+                <div class="img_wrap">
+                    <img src="http://www.ywhl.cn/message/list" alt="">
+                </div>
+            </div>
+        </div>
+    </div><script src="./list_files/screenfull.min.js"></script>
+
+    <div id="ajaxloader3">
+    <div class="outer"></div>
+    <div class="inner"></div>
+</div>
+    <script>
+    
+
+        function publicAlert(con, type, fn) {
+            $('#public-alert .modal-body').html(con);
+            $('#public-alert').modal('toggle');
+            if(!type) $('.modal-footer .no').hide();
+            $('.modal-footer .ok').on('click',function(){
+                fn ? fn() : '';
+                fn = false;
+            });
+            $('.modal-footer .no').on('click',function(){
+                fn = false;
+            });
+        };
+
+        $(document).on('click','.view-img',function (e) {
+            var src = '/'+$(this).data('src');
+            var pic = $('.prop_wrap_con .img_wrap img');
+            pic.attr('src',src);
+            var imgs = new Image();
+            imgs.src =  src;
+            imgs.onload = function(){
+                $('.loading').hide();
+                $('.prop_wrap').css('display','block');
+                var l = pic.innerWidth()/2,
+                    t = pic.innerHeight()/2;
+                $('.prop_wrap_con').css({margin: '-320px 0 0 -'+l+'px'});
+            };
+        });
+        $('.prop_wrap .img_wrap').on('click',function (e) {
+            e.stopPropagation();
+        })
+        $(document).on('click',function(e){
+            e.stopPropagation();
+            $('.prop_wrap').css('display','none');
+        });
+        //关闭截图
+        $('.prop_wrap .close').on('click',function () {
+            $(this).parents('.prop_wrap').css('display','none');
+        });
+    </script>
+    </body>
+    </html>
