@@ -888,7 +888,7 @@ a.list-group-item {
     content: '/ '; }
 
 .navbar {
-  background: inherit;
+  background: rgb(24,187,156);
   min-height: 3.5rem; }
   .navbar .up {
     margin: 0 -0.6em; }
@@ -919,6 +919,8 @@ a.list-group-item {
     text-decoration: none; }
   .navbar-brand img,
   .navbar-brand svg {
+    width: 100%;
+    height: 100%;
     max-height: 24px;
     vertical-align: -4px;
     display: inline-block; }
@@ -1689,7 +1691,7 @@ body {
     display: block !important; }
     .app-aside,
     .app-aside .scroll {
-      width: 12.5rem; }
+      width: 15.5rem; }
     .app-aside.lg:not(.folded),
     .app-aside.lg:not(.folded) .scroll {
       width: 13.75rem; }
@@ -1709,7 +1711,7 @@ body {
         .app-aside.folded.md:not(.hide) ~ .app-content {
           margin-left: 5rem; }
     .app-aside:not(.hide) ~ .app-content {
-      margin-left: 12.5rem; }
+      margin-left: 15.5rem; }
     .app-aside .left {
       position: absolute;
       right: 0;
@@ -4006,7 +4008,10 @@ a.text-blue:hover {
 .text-muted {
   color: inherit !important;
   opacity: 0.6; }
-
+.text-mid {
+  margin-left: auto;
+  margin-right: auto;
+}
 .text-color {
   color: rgba(0, 0, 0, 0.87); }
 

@@ -1,14 +1,13 @@
-﻿<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta  http-equiv="expires" content="2018-06-10 13:55:55">
+<!DOCTYPE html>
+<html lang="en" class="hb-loaded"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta http-equiv="expires" content="2018-06-21 09:06:30">
 
     <title>客户后台</title>
-    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui" />
+    <meta name="description" content="Admin, Dashboard, Bootstrap, Bootstrap 4, Angular, AngularJS">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimal-ui">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="_token" content="Kxk3PbYlgSoX3pXreIFcxiCrp7mK2pRIwiAwT09w"/>
+    <meta name="_token" content="uRaVCbd9Rkv6VE5lVShQYZvs99j6jEQDV1hxQRQX">
     <!-- for ios 7 style, multi-resolution icon of 152x152 -->
     
     
@@ -33,10 +32,10 @@
     <link rel="stylesheet" href="../static/css/loading.css" type="text/css" />
     
     <script src="../static/js/jquery.js"></script>
-    <script src="../static/js/bootstrap.js" ></script>
-    <script src="../static/js/ylchinaarea.js" ></script>
-    <script src="../static/js/location.js" ></script>
-    <script src="../static/js/hsselect.js" ></script>
+    <script src="../static/js/bootstrap.js"></script>
+    <script src="../static/js/YLChinaArea.js"></script>
+    <script src="../static/js/location.js"></script>
+    <script src="../static/js/HSselect.js"></script>
     <script src="../static/js/echarts.min.js"></script>
 </head>
 <body class="pace-done" ui-class="">
@@ -51,7 +50,7 @@
                 <!--<span class="hidden-folded inline">让互联网SEO更容易</span>-->
             </a>
         </div>
-        <div class="hide-scroll" data-flex>
+        <div class="hide-scroll" data-flex="">
             <nav class="scroll nav-light">
                 <ul class="nav">
                     <div class="b-t">
@@ -66,8 +65,9 @@
                             </span>
                         </div>
                     </div>
+
                     <li class="nav-header hidden-folded">
-                        <small class="text-muted">管理控制台</small>
+                        <small class="text-mid">管理控制台</small>
                     </li>
 
                     <li>
@@ -143,29 +143,18 @@
 
             </nav>
         </div>
-
-
-        <div class="b-t">
-            <div class="nav-fold">
-                <span class="pull-left">
-                  <img src="../static/picture/a0.jpg" alt="..." class="w-40 img-circle">
-                </span>
-                <span class="clear hidden-folded p-x">
-                  <span class="block _500">18000126288</span>
-                  <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>online</small>
-                </span>
-            </div>
-        </div>
     </div>
 </div>    <!-- content -->
     <div id="content" class="app-content box-shadow-z0" role="main">
         <div class="app-header white box-shadow">
     <div class="navbar navbar-toggleable-sm flex-row align-items-center" style="padding-top: 0;padding-bottom: 0; height: 3.5rem; margin-bottom: 0;">
         <!-- Open side - Naviation on mobile -->
-        <a data-toggle="modal" data-target="#aside" class="hidden-lg-up mr-3">
-            <i class="material-icons">&#xe5d2;</i>
-        </a>
+       
+
+
+        <!-- navbar right -->
         
+    </div>
 </div>
 
         <div ui-view="" class="app-body" id="view">
@@ -174,57 +163,49 @@
     <div class="">
         <div class="box">
             <div class="box-header dker_line">
-                <a class="btn btn-outline b-info text-info  pull-right" href="/customer/addSite" style="position: relative;z-index: 2">
-                    添加站点
-                </a>
-                <h3>优化提示管理</h3>
-                <small>my SEO tips</small>
+                <h3>代理申请</h3>
+                <small>Agent application</small>
+            </div>
+            
             </div>
 
-
-            <div class="table-responsive">
-                <table class="table table-striped b-t">
-                    <thead>
-                    <tr>
-                        <th>序号</th>
-                        <th>站点名称</th>
-                        <th>站点网址</th>
-                        <th>创建时间</th>
-                        <th>关键词数量</th>
-                        <th>站点权重</th>
-                        <th>操作</th>
-                        <th>选词</th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                                        <tr>
-                        <td>1</td>
-                        <td>账易</td>
-                        <td><a href="http://www.ddheli.com" target="_blank">http://www.ddheli.com</a></td>
-                        <td>2018-03-02 15:06:03</td>
-                        <td>10</td>
-                        <td>0</td>
-                        <td>
-                            <a class="btn info btn-sm" href="/customer/edit/sites/67">站点设置</a>
-                        </td>
-                        <td>
-                            <a class="btn info btn-sm" href="/customer/keywords/choiceType/67">购买关键词</a>
-                        </td>
-                    </tr>
-                                        </tbody>
-                </table>
-                
-            </div>
         </div>
     </div>
 
+
+
+   <script type="application/javascript">
+       function saveSite() {
+           if($('input[name="site[site_url]"]').val().substr(0,4) != 'http'){
+               alert('您添加的地址不符合规则，烦请按照显示添加http://www.xxx.com');
+               return false;
+           }
+           $.ajax({
+               url: '/customer/saveSite',
+               type: "POST",
+               data: $("#form_site").serialize(),
+               success: function(data, textStatus, jqXHR) {
+                   if(typeof data == "string"){
+                       data = JSON.parse(data)
+                   }
+
+                   if(data.code !== 200){
+                       publicAlert(data.message)
+                   }else{
+                       window.location.href = '/customer/siteList';
+                   }
+               }
+           });
+
+       }
+   </script>
 
             </div>
         </div>
         <script src="../static/js/jquery.js"></script>
 <script src="../static/js/jquery.form.js"></script>
 <script src="../static/js/tether.min.js"></script>
-<script src="../static/js/bootstrap.js"></script>
+<script src="../static/js/bootstrap.js(1).下载"></script>
 <script src="../static/js/underscore-min.js"></script>
 <script src="../static/js/jquery.storageapi.min.js"></script>
 <script src="../static/js/pace.min.js"></script>
@@ -248,7 +229,7 @@
 <div class="app-footer">
     <div class="p-2 text-xs">
         <div class="pull-right text-muted py-1">
-            &copy; Copyright <strong>贵阳易网互联</strong> <span class="hidden-xs-down">- Built with GM v3.0.0</span>
+            © Copyright <strong>贵阳易网互联</strong> <span class="hidden-xs-down">- Built with GM v3.0.0</span>
             <a ui-scroll-to="content"><i class="fa fa-long-arrow-up p-x-sm"></i></a>
         </div>
     </div>
@@ -257,7 +238,7 @@
 
     </div>
     <!-- / -->
-    <div id="public-alert" class="modal fade" data-backdrop="true" data-content='显示的内容' style="display: none;" aria-hidden="true">
+    <div id="public-alert" class="modal fade" data-backdrop="true" data-content="显示的内容" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header" style="padding: 10px 15px;">
@@ -278,11 +259,11 @@
             <div class="prop_wrap_con">
                 <span class="close">X</span>
                 <div class="img_wrap">
-                    <img src="" alt="" >
+                    <img src="http://www.fxt.cn/customer/addSite" alt="">
                 </div>
             </div>
         </div>
-    </div>
+    </div><script src="../static/js/screenfull.min.js"></script>
 
     <div id="ajaxloader3">
     <div class="outer"></div>
@@ -331,6 +312,5 @@
         });
     </script>
 
-    
-</body>
+    </body>
 </html>
