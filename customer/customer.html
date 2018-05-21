@@ -61,13 +61,14 @@
                             </span>
                             <span class="clear hidden-folded p-x">
                               <span class="block _500">您的专属客服：吴俊华</span>
-                              <small class="block text-muted"><i class="fa fa-circle text-success m-r-sm"></i>在线</small>
+                              <small class="text-muted"><i class="fa fa-circle text-success m-r-sm"></i>在线</small>
+                              <small class="text-muted"><a style="text-decoration: underline;color: yellow;padding-left: 15px" href="">我要咨询</a></small>
                             </span>
                         </div>
                     </div>
 
-                    <li class="nav-header hidden-folded">
-                        <small class="text-mid">管理控制台</small>
+                    <li class="nav-header hidden-folded text-center">
+                        <small>管理控制台 Management console</small>
                     </li>
 
                     <li>
@@ -180,54 +181,46 @@
                 
     <div class="row">
         <div class="col-xs-6 col-sm-4">
-            <a href="/customer/monitor">
             <div class="box p-a">
-                <div class="pull-left m-r">
-            <span class="w-48 rounded primary">
-              <i class="material-icons"></i>
-            </span>
-                </div>
                 <div class="clear">
+                    <small class="text-muted">今日上词数词数</small>
                     <h4 class="m-0 text-lg _300">1 <span class="text-sm">个</span></h4>
-                    <small class="text-muted">关键词数</small>
+                    <small>达标率：75%</small>
                 </div>
+                <span data-type="0" style="position: absolute;right: 26px;top: 10px;cursor: pointer" class="accredit btn btn-success">
+                管理
+            </span>
+            <span data-type="0" style="position: absolute;right: 26px;bottom: 10px;cursor: pointer" class="accredit btn btn-info">
+                建议
+            </span>
             </div>
-            </a>
         </div>
         <div class="col-xs-6 col-sm-4">
-            <a href="/customer/vallet">
             <div class="box p-a">
-                <div class="pull-left m-r">
-            <span class="w-48 rounded warn">
-              <i class="material-icons"></i>
-            </span>
-                </div>
                 <div class="clear">
+                    <small class="text-muted">总消费</small>
                     <h4 class="m-0 text-lg _300">99999.00 <span class="text-sm">元</span></h4>
-                    <small class="text-muted">账户余额</small>
+                    <small>剩余23元，不足一天</small>
                 </div>
+                <span data-type="0" style="position: absolute;right: 26px;top: 10px;cursor: pointer" class="accredit btn btn-warning">
+                充值
+            </span>
             </div>
-            </a>
         </div>
         <div class="col-xs-12 col-sm-4" style="position: relative">
-            <a href="/customer/seoTips">
             <div class="box p-a">
-                <div class="pull-left m-r">
-            <span class="w-48 rounded  accent">
-              <i class="material-icons"></i>
-            </span>
-                </div>
                 <div class="clear">
-                    <h4 class="m-0 text-lg _300">1<span class="text-sm">个</span></h4>
-                    <small class="text-muted">站点数</small>
+                    <small class="text-muted">绑定站点数</small>
+                    <h4 class="m-0 text-lg _300">2<span class="text-sm">个</span></h4>
+                    <small style="visibility:hidden;">1</small>
                 </div>
-            </div>
-            </a>
-
-            <span data-type="0" style="position: absolute;right: 26px;top: 20px;cursor: pointer" class="accredit btn btn-success">
+                <span data-type="0" style="position: absolute;right: 26px;top: 10px;cursor: pointer" class="accredit btn btn-success">
                 取消授权
             </span>
-
+            <span data-type="0" style="position: absolute;right: 26px;bottom: 10px;cursor: pointer" class="accredit btn btn-danger">
+                增加绑定
+            </span>
+            </div>
         </div>
         <!--<div class="col-xs-6 col-sm-3">
             <div class="box p-a">
@@ -481,7 +474,7 @@
 <script src="../static/js/ajax.js"></script>
 
 
-<div class="app-footer">
+<div class="--footer">
     <div class="p-2 text-xs">
         <div class="pull-right text-muted py-1">
             &copy; Copyright <strong>贵阳易网互联</strong> <span class="hidden-xs-down">- Built with GM v3.0.0</span>
